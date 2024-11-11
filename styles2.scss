@@ -1,0 +1,91 @@
+$bgColor: #f4dbbf;
+$green: #5ede77;
+$red: #dd6060;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main--container{
+    // border: 1px solid red;
+    .context{
+        // border: 1px solid black;
+        max-width: 1512px;
+        width: 80%; /* Set a fixed width for the body element */
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        .right--content{
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            .rtop{
+                input{
+                    border: 1px solid black;
+                    border-radius: 3px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                }
+              
+            }
+            .rbottom{
+                border: 1px solid black;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 3px;
+                .btn--context{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                    padding: 1em;
+                    button{
+                        padding: 10px 5px 10px 5px;
+                        font-size: 9px;
+                        color: bisque;
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        background-color: $red;
+                        border-radius: 3px;
+                        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                        transition: all 0.3s ease; /* Applies ease effect to all properties */
+                        &:hover {
+                            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+                            color: #fff;
+                            cursor: pointer;
+                            background-color: #fff;
+                            color: $green;
+                            -webkit-text-stroke: 1px #000;
+                            transform: translateY(-2px);
+                          }
+                    }
+                }
+                
+            }
+        }
+        .left--content{
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            .lcontext{
+                padding: 1em;
+
+                .output{
+                    border: 1px solid black;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    border-radius: 3px;
+                    height: 30vh;
+                    margin-top: 2em;
+                    padding: 1em;
+                }
+            }
+        }
+    }
+}

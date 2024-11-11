@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main--container .context {
+  max-width: 1512px;
+  width: 80%; /* Set a fixed width for the body element */
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.main--container .context .right--content {
+  display: flex;
+  flex-direction: column;
+}
+.main--container .context .right--content .rtop input {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.main--container .context .right--content .rbottom {
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.main--container .context .right--content .rbottom .btn--context {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 1em;
+}
+.main--container .context .right--content .rbottom .btn--context button {
+  padding: 10px 5px 10px 5px;
+  font-size: 9px;
+  color: bisque;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: #dd6060;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; /* Applies ease effect to all properties */
+}
+.main--container .context .right--content .rbottom .btn--context button:hover {
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  background-color: #fff;
+  color: #5ede77;
+  -webkit-text-stroke: 1px #000;
+  transform: translateY(-2px);
+}
+.main--container .context .left--content {
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.main--container .context .left--content .lcontext {
+  padding: 1em;
+}
+.main--container .context .left--content .lcontext .output {
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 30vh;
+  margin-top: 2em;
+  padding: 1em;
+}/*# sourceMappingURL=styles2.css.map */
